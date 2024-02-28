@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Read Page</title>
+    <link rel="stylesheet" type="text/css" href="ReadStyle.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="MainPage.html">HOME</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Create.html">CREATE</a>
+        <a href="Read.html">READ</a>
+        <a href="Update.html">UPDATE</a>
+        <a href="Delete.html">DELETE</a>
+        <a href="index.html" onclick="Logout()">LOG OUT</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content-container">
+        <div class="content">
+            <form class="form-container">
+
+                <h3>ALL RECORDS</h3>
+                <br>
+				<input type="submit" class="submit-btn" value="Get All Records" onclick="Read()">
+				<br>
+                <table border="1">
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Mobile No</th>
+                        <th>Email Id</th>
+                        <th>User Name</th>
+                        <th>Password</th>
+                    </tr>
+
+                    <!-- <% List<UserData> dataList = (List<UserData>) request.getAttribute("dataList");
+                       if (dataList != null) {
+                           for (UserData user : dataList) { %>
+                                <tr>
+                                    <td><%= user.getFullName() %></td>
+                                    <td><%= user.getMobileNo() %></td>
+                                    <td><%= user.getEmailId() %></td>
+                                    <td><%= user.getUserName() %></td>
+                                    <td><%= user.getPassword() %></td>
+                                </tr>
+                            <% }
+                        } %> -->
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; <%= new java.util.Date().getYear() + 1900 %> Created by Rohit Kumar. All rights reserved.</p>
+    </div>
+    
+	<script src="Script.js"></script>
+    
+
+</body>
+</html>
